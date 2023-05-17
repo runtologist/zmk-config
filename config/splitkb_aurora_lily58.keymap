@@ -50,7 +50,7 @@
             bindings = <
 AS(GRAVE) AS(N1)  AS(N2)  AS(N3)    AS(N4)    AS(N5)                                 AS(N6)        AS(N7)    AS(N8)    AS(N9)  AS(N0)    AS(MINUS)
 &kp TAB   AS(Q)   AS(W)   AS(F)     AS(P)     AS(G)                                  AS(J)         AS(L)     AS(U)     AS(Y)   AS(SEMI)  AS(EQUAL)
-&kp LCTRL AS(A)   AS(R)   AS(D)     AS(T)     AS(D)                                  AS(H)         AS(N)     AS(E)     AS(I)   AS(O)     AS(SQT)
+&kp LCTRL AS(A)   AS(R)   AS(S)     AS(T)     AS(D)                                  AS(H)         AS(N)     AS(E)     AS(I)   AS(O)     AS(SQT)
 &kp LSHFT AS(Z)   AS(X)   AS(C)     AS(V)     AS(B)       AS(LBKT)     AS(RBKT)      AS(K)         AS(M)     AS(COMMA) AS(DOT) AS(FSLH)  AS(BSLH)
                           &kp LALT  &kp LGUI  TM(2,SPACE) TM(1,ENTER)  TM(1,BSPC)    TM(2,SPACE)   &kp RALT  &kp RGUI
             >;
