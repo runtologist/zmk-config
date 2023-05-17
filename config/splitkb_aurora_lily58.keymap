@@ -14,6 +14,14 @@
 
 
 / {
+        combos {
+            compatible = "zmk,combos";
+            combo_esc {
+                timeout-ms = <100>;
+                key-positions = <13 14>;
+                bindings = <&kp ESC>;
+            };
+        };
         behaviors {
             as: auto_shift {
                 compatible = "zmk,behavior-hold-tap";
