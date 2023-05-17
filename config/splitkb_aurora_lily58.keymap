@@ -42,17 +42,17 @@
 
         default_layer {
 // ------------------------------------------------------------------------------------------------------------
-// |  ESC  |  1  |  2  |  3   |  4   |  5         |                               |  6          |  7    |  8    |  9   |   0   |   `   |
-// |  TAB  |  Q  |  W  |  F   |  P   |  G         |                               |  J          |  L    |  U    |  Y   |   ;   |   -   |
-// |  CTRL |  A  |  R  |  S   |  T   |  D         |                               |  H          |  N    |  E    |  I   |   O   |   '   |
-// | SHIFT |  Z  |  X  |  C   |  V   |  B         |   "["        |  |  "]"        |  K          |  M    |  ,    |  .   |   /   | SHIFT |
-//                     | ALT  | GUI  | BSPC/LOWER |  SPACE/RAISE |  | SPACE/RAISE | ENTER/LOWER | ALTGR | GUI   |
+// |   `   |  1  |  2  |  3   |  4   |  5          |                             |  6          |  7    |  8    |  9   |   0   |   -   |
+// |  TAB  |  Q  |  W  |  F   |  P   |  G          |                             |  J          |  L    |  U    |  Y   |   ;   |   =   |
+// |  CTRL |  A  |  R  |  S   |  T   |  D          |                             |  H          |  N    |  E    |  I   |   O   |   '   |
+// | SHIFT |  Z  |  X  |  C   |  V   |  B          |  "["        |  |  "]"       |  K          |  M    |  ,    |  .   |   /   |   \   |
+//                     | ALT  | GUI  | SPACE/LOWER | ENTER/RAISE |  | BSPC/RAISE | SPACE/LOWER | ALTGR | GUI   |
             bindings = <
-&kp ESC   AS(N1)  AS(N2)  AS(N3)    AS(N4)    AS(N5)                                 AS(N6)        AS(N7)    AS(N8)    AS(N9)  AS(N0)    AS(GRAVE)
-&kp TAB   AS(Q)   AS(W)   AS(F)     AS(P)     AS(G)                                  AS(J)         AS(L)     AS(U)     AS(Y)   AS(SEMI)  AS(MINUS)
+AS(GRAVE) AS(N1)  AS(N2)  AS(N3)    AS(N4)    AS(N5)                                 AS(N6)        AS(N7)    AS(N8)    AS(N9)  AS(N0)    AS(MINUS)
+&kp TAB   AS(Q)   AS(W)   AS(F)     AS(P)     AS(G)                                  AS(J)         AS(L)     AS(U)     AS(Y)   AS(SEMI)  AS(EQUAL)
 &kp LCTRL AS(A)   AS(R)   AS(D)     AS(T)     AS(D)                                  AS(H)         AS(N)     AS(E)     AS(I)   AS(O)     AS(SQT)
-&kp LSHFT AS(Z)   AS(X)   AS(C)     AS(V)     AS(B)       AS(LBKT)     AS(RBKT)      AS(K)         AS(M)     AS(COMMA) AS(DOT) AS(FSLH)  &kp RSHFT
-                          &kp LALT  &kp LGUI  TM(1,BSPC)  TM(2,SPACE)  TM(2,SPACE)   TM(1,ENTER)   &kp RALT  &kp RGUI
+&kp LSHFT AS(Z)   AS(X)   AS(C)     AS(V)     AS(B)       AS(LBKT)     AS(RBKT)      AS(K)         AS(M)     AS(COMMA) AS(DOT) AS(FSLH)  AS(BSLH)
+                          &kp LALT  &kp LGUI  TM(2,SPACE) TM(1,ENTER)  TM(1,BSPC)    TM(2,SPACE)   &kp RALT  &kp RGUI
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
@@ -78,17 +78,17 @@
 
         raise_layer {
 // ------------------------------------------------------------------------------------------------------------
-// |       |     |     |      |      |      |                   |      |       |       |      |       |       |
-// |   `   |  1  |  2  |  3   |  4   |  5   |                   |  6   |   7   |   8   |  9   |   0   |       |
-// |   F1  |  F2 |  F3 |  F4  |  F5  |  F6  |                   |      |   <-  |   v   |  ^   |  ->   |       |
-// |   F7  |  F8 |  F9 |  F10 |  F11 |  F12 |        |  |       |  +   |   -   |   =   |  [   |   ]   |   \   |
+// |   F1  |  F2 |  F3 |  F4  |  F5  |  F6  |                   |  F7  |   F8  |  F9   |  F10 |  F11  |  F12  |
+// |       |     |     |      |      |      |                   |      | WORDL | PGDWN | PGUP | WORDR |       |
+// |       |     |     |      |      |      |                   | ESC  |   <-  |   v   |  ^   |  ->   | DEL   |
+// |       |     |     |      |      |      |        |  |       |      | HOME  | BOTTOM| TOP  |  END  |       |
 //                     |      |      |      |        |  |       |      |       |       |
             bindings = <
-&trans    &trans &trans &trans  &trans  &trans                       &trans      &trans    &trans    &trans   &trans    &trans
-&kp GRAVE &kp N1 &kp N2 &kp N3  &kp N4  &kp N5                       &kp N6      &kp N7    &kp N8    &kp N9   &kp N0    &trans
-&kp F1    &kp F2 &kp F3 &kp F4  &kp F5  &kp F6                       &trans      &kp LEFT  &kp DOWN  &kp UP   &kp RIGHT &trans
-&kp F7    &kp F8 &kp F9 &kp F10 &kp F11 &kp F12   &trans   &trans    &kp KP_PLUS &kp MINUS &kp EQUAL &kp LBKT &kp RBKT  &kp BSLH
-                        &trans  &trans  &trans    &trans   &trans    &trans      &trans    &trans
+&kp F1    &kp F2 &kp F3 &kp F4  &kp F5  &kp F6                    &kp F7      &kp F8       &kp F9      &kp F10      &kp F11       &kp F12
+&trans    &trans &trans &trans  &trans  &trans                    &trans      &kp LC(LEFT) &kp PG_UP   &kp PG_DN    &kp LC(RIGHT) &trans
+&trans    &trans &trans &trans  &trans  &trans                    &kp ESC     &kp LEFT     &kp DOWN    &kp UP       &kp RIGHT     &kp DEL
+&trans    &trans &trans &trans  &trans  &trans  &trans   &trans   &trans      &kp HOME     &kp LC(END) &kp LC(HOME) &kp END       &trans
+                        &trans  &trans  &trans  &trans   &trans   &trans      &trans       &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
