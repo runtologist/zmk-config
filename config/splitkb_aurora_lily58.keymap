@@ -65,11 +65,11 @@
 // |  SCW  |  Z  |  X  |  C   |  D   |  V          |  "["        |  |  "]"       |  K          |  H    |  ,    |  .   |   /   |   \   |
 //                     | ALT  | GUI  | SPACE/LOWER | ENTER/RAISE |  | SPACE/RAISE | BKSP/LOWER | ALTGR | GUI   |
             bindings = <
-AS(GRAVE) AS(N1)  AS(N2)  AS(N3)    AS(N4)    AS(N5)                                 AS(N6)        AS(N7)    AS(N8)    AS(N9)  AS(N0)    AS(MINUS)
-&kp TAB   AS(Q)   AS(W)   AS(F)     AS(P)     AS(B)                                  AS(J)         AS(L)     AS(U)     AS(Y)   AS(SEMI)  AS(EQUAL)
-&kp LCTRL AS(A)   AS(R)   AS(S)     AS(T)     AS(G)                                  AS(M)         AS(N)     AS(E)     AS(I)   AS(O)     AS(SQT)
-&kp LSHFT AS(Z)   AS(X)   AS(C)     AS(D)     AS(V)       AS(LBKT)     AS(RBKT)      AS(K)         AS(H)     AS(COMMA) AS(DOT) AS(FSLH)  AS(BSLH)
-                          &kp LALT  &kp LGUI  TM(1,SPACE) TM(2,ENTER)  TM(2,SPACE)    TM(1,BSPC)   &kp RALT  &kp RGUI
+AS(GRAVE) AS(N1)  AS(N2)  AS(N3)    AS(N4)        AS(N5)                                 AS(N6)        AS(N7)    AS(N8)    AS(N9)  AS(N0)    AS(MINUS)
+&kp TAB   AS(Q)   AS(W)   AS(F)     AS(P)         AS(B)                                  AS(J)         AS(L)     AS(U)     AS(Y)   AS(SEMI)  AS(EQUAL)
+&kp LCTRL AS(A)   AS(R)   AS(S)     AS(T)         AS(G)                                  AS(M)         AS(N)     AS(E)     AS(I)   AS(O)     AS(SQT)
+&kp LSHFT AS(Z)   AS(X)   AS(C)     AS(D)         AS(V)       AS(LBKT)     AS(RBKT)      AS(K)         AS(H)     AS(COMMA) AS(DOT) AS(FSLH)  AS(BSLH)
+                          &kp LALT  &mt LGUI ESC  TM(1,SPACE) TM(2,ENTER)  TM(2,SPACE)    TM(1,BSPC)   &kp RALT  &kp RGUI
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
