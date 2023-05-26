@@ -66,9 +66,9 @@
 //                     | ALT  | GUI  | SPACE/LOWER | ENTER/RAISE |  | BKSP/RAISE | SPACE/LOWER | GUI   | ALT   |
             bindings = <
 AS(GRAVE) AS(N1)  AS(N2)  AS(N3)    AS(N4)        AS(N5)                                 AS(N6)        AS(N7)    AS(N8)    AS(N9)  AS(N0)    AS(MINUS)
-&kp TAB   AS(Q)   AS(W)   AS(F)     AS(P)         AS(B)                                  AS(J)         AS(L)     AS(U)     AS(Y)   AS(SEMI)  AS(EQUAL)
-&kp LSHFT AS(A)   AS(R)   AS(S)     AS(T)         AS(G)                                  AS(M)         AS(N)     AS(E)     AS(I)   AS(O)     AS(SQT)
-&kp LCTRL AS(Z)   AS(X)   AS(C)     AS(D)         AS(V)       AS(LBKT)     AS(RBKT)      AS(K)         AS(H)     AS(COMMA) AS(DOT) AS(FSLH)  AS(BSLH)
+&kp TAB   AS(Q)   AS(W)   AS(E)     AS(R)         AS(T)                                  AS(Y)         AS(U)     AS(I)     AS(O)   AS(P)  AS(EQUAL)
+&kp LSHFT AS(A)   AS(S)   AS(D)     AS(F)         AS(G)                                  AS(H)         AS(J)     AS(K)     AS(L)   AS(SEMI)     AS(SQT)
+&kp LCTRL AS(Z)   AS(X)   AS(C)     AS(V)         AS(B)       AS(LBKT)     AS(RBKT)      AS(N)         AS(M)     AS(COMMA) AS(DOT) AS(FSLH)  AS(BSLH)
                           &kp LALT  &mt LGUI ESC  TM(1,SPACE) TM(2,ENTER)  TM(2,BSPC)    TM(1,SPACE)   &kp RGUI  &kp RALT
             >;
 
