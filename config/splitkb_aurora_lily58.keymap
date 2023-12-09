@@ -71,7 +71,7 @@ SCW(LCTRL) &kp Z  &kp X   &kp C     &kp V         &kp B           AS(LBKT)     A
                           &kp LALT  &mt LGUI ESC  TM(1,SPACE) TM(2,ENTER)  TM(2,BSPC)    TM(1,SPACE)   &kp RGUI  &kp RALT
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
+//             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
 
         lower_layer {
@@ -89,7 +89,7 @@ SCW(LCTRL) &kp Z  &kp X   &kp C     &kp V         &kp B           AS(LBKT)     A
                                               &trans            &trans       &trans      &trans     &trans   &trans          &trans          &trans
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
+//             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
 
         raise_layer {
@@ -107,7 +107,7 @@ SCW(LCTRL) &kp Z  &kp X   &kp C     &kp V         &kp B           AS(LBKT)     A
                               &trans    &trans    &trans  &trans   &trans   &trans      &trans       &trans
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
+//             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
     };
 };
