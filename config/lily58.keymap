@@ -98,7 +98,7 @@ AS(GRAVE)  AS(N1)           AS(N2)            AS(N3)            AS(N4)       AS(
 &trans     &trans           &trans            &trans            &trans       &trans                          &trans          &trans          &trans          &trans       &trans        &trans      
 &bt BT_CLR &bt BT_SEL 0     &bt BT_SEL 1      &bt BT_SEL 2      &bt BT_SEL 3 &bt BT_SEL 4                    &out OUT_BLE    &out OUT_USB    &trans          &trans       &trans        &trans
 &trans     &trans           &trans            &trans            &trans       &trans                          &trans          &trans          &trans          &trans       &trans        &trans      
-&trans     &trans           &trans            &trans            &trans       &trans      &trans     &trans   &trans          &trans          &trans          &trans       &trans        &trans      
+&bt EP_TOG &trans           &trans            &trans            &trans       &trans      &trans     &trans   &trans          &trans          &trans          &trans       &trans        &trans      
             >;
         };
     };
